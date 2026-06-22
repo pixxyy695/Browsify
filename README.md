@@ -5,8 +5,7 @@ A simple full-stack product listing app with a Node.js + Express backend and a R
 **Project Structure**
 - **Backend**: [backend](backend/) — API server and DB models
 - **React Frontend**: [frontend-react](frontend-react/) — full React app (recommended)
-- **Static Frontend (optional)**: [frontend](frontend/) — simple vanilla HTML/CSS/JS demo
-
+  
 **Quick Start**
 1. Start MongoDB (local or Atlas).
 2. Run backend server:
