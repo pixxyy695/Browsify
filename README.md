@@ -66,9 +66,6 @@ Notes on pagination:
 - Entry: [frontend-react/src/App.js](frontend-react/src/App.js)
 - The React app uses hooks to fetch products, apply category filters, and navigate pages using the API's cursors. If you need to change the API URL, update `API_BASE_URL` in `src/App.js`.
 
-Static demo
-- A small non-React demo is available at [frontend/index.html](frontend/index.html) (useful for quick testing without running `npm start`).
-
 **Common Commands**
 - Backend (development): `cd backend && npm run dev`
 - Seed DB: `cd backend && node seed.js`
