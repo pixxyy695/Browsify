@@ -4,7 +4,9 @@ import ProductGrid from './components/ProductGrid';
 import FilterBar from './components/FilterBar';
 import Pagination from './components/Pagination';
 
-const API_BASE_URL = 'http://localhost:5000/api/products';
+const API_BASE_URL = process.env.REACT_APP_API_URL
+  ? `${process.env.REACT_APP_API_URL}/api/products`
+  : 'http://localhost:5000/api/products';
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -104,9 +106,9 @@ function App() {
       const prevCursor =
         newPage > 0
           ? {
-              cursor: paginationStack[newPage].cursor,
-              cursorId: paginationStack[newPage].cursorId,
-            }
+            cursor: paginationStack[newPage].cursor,
+            cursorId: paginationStack[newPage].cursorId,
+          }
           : { cursor: null, cursorId: null };
 
       const data = await fetchProducts(
